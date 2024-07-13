@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="max-w-md w-full bg-white rounded-lg shadow-md p-8">
+        <div class="flex justify-center mb-8">
+            <img src="logo.png" alt="Logo" class="h-20">
+        </div>
+        <h2 class="text-xl text-center mb-6">Login To USA Funding Applications</h2>
+        <p class="text-center mb-6">Please login to gain access to your member benefits</p>
+        <form id="loginForm">
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-bold mb-2">Email Address</label>
+                <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-700 font-bold mb-2">Password</label>
+                <input type="password" id="password" name="password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+            </div>
+            <div class="flex items-center justify-between mb-4">
+                <label class="inline-flex items-center">
+                    <input type="checkbox" class="form-checkbox text-blue-600">
+                    <span class="ml-2 text-gray-700">Remember me</span>
+                </label>
+                <a href="#" class="text-blue-600 hover:underline">Forgot Password?</a>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-200">Login</button>
+        </form>
+        <p class="text-center text-gray-600 mt-4">Don't have an account? <a href="registration.html" class="text-blue-600 hover:underline">Sign Up</a></p>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
