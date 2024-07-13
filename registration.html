@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USA Funding Applications Database - Registration Form</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <body class="bg-gray-100 text-gray-900">
+    <header class="bg-white text-gray-900 p-4 flex justify-between items-center shadow-md">
+        <div class="flex items-center">
+            <img src="images/default.png" alt="Logo" class="h-10 mr-4">
+        </div>
+        <a href="login.html" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Member Login</a>
+    </header>
     <script>
         function handleCountryChange() {
             const countrySelect = document.getElementById('country');
@@ -67,7 +74,7 @@
     <div class="container mx-auto p-6">
         <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onsubmit="return validateForm()">
             <div class="text-center mb-6">
-                <img src="your-logo-url.png" alt="Logo" class="mx-auto h-16">
+                <img src="images/default.png" alt="Logo" class="mx-auto h-16">
             </div>
             <h2 class="text-xl font-semibold mb-6">USA Funding Applications Database Registration Form</h2>
             <p class="mb-4">Step 1 of 3: Tell us about You and Your Funding Needs</p>
@@ -645,5 +652,34 @@
         }
     </script>
 </body>
+<footer id="colophon" class="footer bg-gray-700 text-white mt-20">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="footer_menu">
+                    <div class="footer_item">
+                        <a href="/v9/" class="hover:text-gray-300">Home</a>
+                    </div>
+                    <div class="footer_item">
+                        <a href="/v9/terms" class="hover:text-gray-300">Terms</a>
+                    </div>
+                    <div class="footer_item">
+                        <a href="/v9/privacy-policy" class="hover:text-gray-300">Privacy Policy</a>
+                    </div>
+                    <div class="footer_item">
+                        <a href="/vx/usa/contact/" class="hover:text-gray-300">Contact (1-888-261-4889)</a>
+                    </div>
+                </div>
+                <div class="footer__legal col-span-2">
+                    <h6 class="footer__legal__copyright">Copyright 2019 USA Funding Applications</h6>
+                    <h6 class="footer__legal__disclaimer">USA Funding Applications is not a government agency and is not
+                        affiliated with the United States Government or any other funding agency. USA Grant
+                        Applications apply for funding as well as resources on where to apply.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"></script>
+    <script src="register.js"></script>
+</body>
 </html>
